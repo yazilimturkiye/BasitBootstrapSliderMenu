@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- yazilimturk 26.06.2020 Ankara -->
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="yazilimturk simple webpage">
+  <meta name="author" content="yazilimturkiye.com yazilimturk">
+
+  <title>Simple WebPage</title>
+  
+  <!--Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/test.css">
+  <!--footer css-->
+  <link href="css/sticky-footer.css" rel="stylesheet">
+  <!--Font Awesome css-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!--jquery js-->
+  <script src="vendor/bootstrap/js/jquery-3.3.1.min.js"></script>
+  <!--DataTables css-->
+  <link rel="stylesheet" type="text/css" href="DataTables/css/dataTables.bootstrap4.min.css"/>
+  <link rel="stylesheet" type="text/css" href="DataTables/css/select.bootstrap4.min.css"/>
+  
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar Start-->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div align="center" class="sidebar-heading"><img src="images/wolf.png" width="65" height="70" title="WOLF" class="d-inline-block align-center"><br><span class="badge badge-pill badge-danger">YAZILIMTURK</span></br><h5><b>Simple Sidebar WebPage</b></h5></div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light"><img src="images/homepage.png" width="20" height="20" class="d-inline-block align-center"><b> Home Page</b></a>
+        <a href="lists.html" class="list-group-item list-group-item-action bg-light"><img src="images/lists.png" width="20" height="20" class="d-inline-block align-center"> Lists</a>
+        <a href="programs.html" class="list-group-item list-group-item-action bg-light"><img src="images/programs.png" width="20" height="20" class="d-inline-block align-center"> Programs</a>
+        <a href="documents.html" class="list-group-item list-group-item-action bg-light"><img src="images/documents.png" width="20" height="20" class="d-inline-block align-center"> Documents</a>
+        <a href="contract.html" class="list-group-item list-group-item-action bg-light"><img src="images/contact.png" width="20" height="20" class="d-inline-block align-center"> Contact</a>
+        <a href="about.html" class="list-group-item list-group-item-action bg-light"><img src="images/about.png" width="20" height="20" class="d-inline-block align-center"> About</a>
+      </div>
+    </div>
+    <!-- Sidebar Finish -->
+
+    <!--NavBar Start-->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-secondary" id="menu-toggle">Menu On-Off</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Right Menu Start --> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home Page<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Test2
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Test2-1</a>
+                <a class="dropdown-item" href="#">Test2-2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Right Menu Finish --> 
+      </nav>
+      <!--NavBar Finish-->
+
+      <!-- WebPage Content Start -->
+      <div class="container-fluid">
+        <h1 class="mt-2" style="color:crimson;">Title Example</h1>
+        <p>Sub title example, for download press <code>download</code> button.</p>
+
+        <!--table start-->
+		    <div class="card">
+            <div class="card-header">Table Title</div>
+            <div class="card-body">
+		   <table id="CertTable" class="table-sm table-striped table-bordered table-hover dt-responsive" style="width:100%" >
+              <thead>
+                <tr>
+                  <th>Table title 1</th>
+                  <th>Table title 2</th>
+                  <th>Table title 3</th>
+                  <th>Table İcon</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                
+                  <td>Content Example Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>Content Example Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>Content Example Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>Content Example Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  <td>Content Example Content Example</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+ 
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+ 
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+  
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+   
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+                
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+ 
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+
+                <tr>
+   
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+ 
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+ 
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+                
+                
+                <tr>
+ 
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  
+                  <td align="center"><img align="center" src="images/wolf.png" width="35" height="35" title="Wolf" class="d-inline-block align-center"></td>
+                  
+                  <td>
+                      <a href="#" class="btn btn-danger btn-sm btn-block" role="button" aria-pressed="true">Download</a>
+                </td>
+                </tr>
+
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+		    </div>
+            </div>
+            </div>
+    <!--Table Finish-->
+
+
+
+
+
+
+      </div> <!--Webpage Content Finish-->
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- SliderMenu JS Code -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+<!--Foother Start-->
+<footer class="footer border-top">
+   <div class="footer-copyright text-center"><img align="top" src="images/wolf.png" width="37" height="40" title="yazilimturkiye" class="d-inline-block align-center"> Yazilimturkiye Simple WebPage <a href="https://yazilimturkiye.com/" style="color:crimson">yazilimturkiye</a>
+  </div>
+</footer>
+<!--Foother Finish-->
+
+</body>
+
+</html>
